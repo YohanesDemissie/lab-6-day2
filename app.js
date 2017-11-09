@@ -47,6 +47,7 @@ if (carQuestion === carAnswer) {
 }
 carFun();
 
+function tvShow(){
 var breakingBad = prompt ('Has Yohanes ever watched Breaking Bad?').toLowerCase();
 var breakingBadAnswer = 'yes'
 console.log ('Breaking Bad', breakingBad);
@@ -58,6 +59,8 @@ if (breakingBad === breakingBadAnswer) {
 } else {
   alert ('Are you kidding me... who hasn\'t watched Breaking Bad! Smh...')
 }
+}
+tvShow();
 
 var softwareDeveloper = prompt ('For you\'re final question, you must know Yohanes pretty well to answer coreectly and walk home with $1,000,000.... Will Yohanes.... be the greatest software developer this world has ever seen?').toLowerCase();
 var softwareDevAnswer = 'yes'
