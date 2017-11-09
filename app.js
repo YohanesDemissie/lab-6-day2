@@ -3,7 +3,7 @@
 var score=0;
 var name = prompt('Welcome to the Yohanes trivia. Please enter your user name.')
 
-
+function namFun(){
 var nameQuestion = prompt ('Is "Yohanes" a translated version of "Juan"?').toLowerCase();
 var nameAnswer = 'yes'
   console.log ('First Question', nameQuestion);
@@ -15,7 +15,10 @@ if (nameQuestion === nameAnswer) {
 } else {
   alert ('Of course you didn\'t know that one. Unless you\'ve completed the entire Rosetta Stone collection.')
 }
+}
+namFun();
 
+function homeTownFun () {
 var homeTownQuestion = prompt ('Has Yohanes lived in Seattle his whole life?').toLowerCase();
 var homeTown = 'yes'
   console.log('home town', homeTownQuestion);
@@ -28,6 +31,10 @@ if (homeTownQuestion === homeTown) {
 } else {
   alert ('You just ruined your chance at a million dollars smh... good bye.')
 }
+}
+homeTownFun();
+
+
 
 var carQuestion = prompt ('Does yohanes drive a Porche Panemera?').toLowerCase();
 var carAnswer = 'no'
