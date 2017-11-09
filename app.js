@@ -62,6 +62,7 @@ if (breakingBad === breakingBadAnswer) {
 }
 tvShow();
 
+function softwareFun(){
 var softwareDeveloper = prompt ('For you\'re final question, you must know Yohanes pretty well to answer coreectly and walk home with $1,000,000.... Will Yohanes.... be the greatest software developer this world has ever seen?').toLowerCase();
 var softwareDevAnswer = 'yes'
 console.log ('software developer', softwareDeveloper);
@@ -72,6 +73,8 @@ if (softwareDeveloper === softwareDevAnswer) {
   console.log('score count', score);
 
 }
+}
+softwareFun();
 
 for (var i=0; i<4; i++) {
   var favoriteNumber= prompt('What is my favorite number?')
