@@ -66,3 +66,19 @@ for (var i=0; i<4; i++) {
         alert('Incorrect input.')
       }
   }
+
+var favoriteCars = ['panemera', 'tesla', 'chevelle', 'lamborghini','rocket ship'];
+for (var i=0; i<6; i++) {
+  var automobile = prompt('Can you guess one of my 5 favoirte cars?').toLowerCase();
+  if (favoriteCars.includes(automobile)){
+    alert('Great guess. My dream car collection consists of a Lamboghini Armagedon, \'64 Chevy Chevelle, Porche Panemera, Tesla S, and a daily commutable rocket ship!(even if it hasn\'t been invented yet)')
+    console.log('favorite cars', favoriteCars);
+    break;
+  } else alert('That\'s a good guess but not my top 5.')
+  console.log('right or wrong', favoriteCars)
+  while(i===5) {
+    alert('You had some good guess but my dream car collection consists of a Lamboghini Armagedon, \'64 Chevy Chevelle, Porche Panemera, Tesla S, and a daily commutable rocket ship (even if it hasn\'t been invented yet).')
+    console.log('favorite cars after 5 gueses', favoriteCars)
+    break;
+  }
+}
