@@ -34,8 +34,7 @@ if (homeTownQuestion === homeTown) {
 }
 homeTownFun();
 
-
-
+function carFun(){
 var carQuestion = prompt ('Does yohanes drive a Porche Panemera?').toLowerCase();
 var carAnswer = 'no'
 console.log('car question', carQuestion);
@@ -45,6 +44,8 @@ if (carQuestion === carAnswer) {
 } else {
     alert ('Although he imagines this to be true as well, his imaginary porche is actually a Honda Civic. Long story short, you got the wrong answer.')
 }
+}
+carFun();
 
 var breakingBad = prompt ('Has Yohanes ever watched Breaking Bad?').toLowerCase();
 var breakingBadAnswer = 'yes'
