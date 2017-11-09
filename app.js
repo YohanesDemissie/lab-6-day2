@@ -76,6 +76,7 @@ if (softwareDeveloper === softwareDevAnswer) {
 }
 softwareFun();
 
+function favNum(){
 for (var i=0; i<4; i++) {
   var favoriteNumber= prompt('What is my favorite number?')
   var numberAnswer= '7'
@@ -97,7 +98,10 @@ for (var i=0; i<4; i++) {
         alert('Incorrect input.')
       }
   }
+}
+favNum();
 
+function favCar(){
 var favoriteCars = ['panemera', 'tesla', 'chevelle', 'lamborghini','rocket ship'];
 for (var i=0; i<6; i++) {
   var automobile = prompt('Can you guess one of my 5 favoirte cars?').toLowerCase();
@@ -116,4 +120,7 @@ for (var i=0; i<6; i++) {
     break;
   }
 }
+}
+favCar();
+
 alert ('Congratulations '+name+'You have completed the essay! You answered'+score+' out of 7 questions coorect. Unfortunately you did not win the grand prize. Better luck next time on our trivia and have a great day!') ;
