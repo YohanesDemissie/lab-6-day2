@@ -1,10 +1,17 @@
 'use strict'
-var name = prompt ('Is "Yohanes" a translated version of "Juan"?').toLowerCase();
-var nameAnswer = 'yes'
-  console.log ('First Question', name);
 
-if (name === nameAnswer) {
+var score=0;
+var name = prompt('Welcome to the Yohanes trivia. Please enter your user name.')
+
+
+var nameQuestion = prompt ('Is "Yohanes" a translated version of "Juan"?').toLowerCase();
+var nameAnswer = 'yes'
+  console.log ('First Question', nameQuestion);
+
+if (nameQuestion === nameAnswer) {
   alert ('How the hell did you know?! Yohanes is the Amharic interpreted name for "John" which is the english interpreted name for the spanish translation, "Juan". You are one step closer to a million dollars! Are you ready for your next question?');
+  score++;
+  console.log('score count', score);
 } else {
   alert ('Of course you didn\'t know that one. Unless you\'ve completed the entire Rosetta Stone collection.')
 }
@@ -15,6 +22,9 @@ var homeTown = 'yes'
 
 if (homeTownQuestion === homeTown) {
   alert ('Correct! Might have been a lucky guess. He is in fact a proud Seattelite! Let\'s test your luck on the next question...')
+  score++;
+  console.log('score count', score);
+
 } else {
   alert ('You just ruined your chance at a million dollars smh... good bye.')
 }
@@ -35,6 +45,8 @@ console.log ('Breaking Bad', breakingBad);
 
 if (breakingBad === breakingBadAnswer) {
   alert ('Hell Yea! You aren\'t living if you haven\'t! Anyways... on to the final question to win ONE MILLION DOLLARS! Are you ready?...')
+  score++;
+  console.log('score count', score);
 } else {
   alert ('Are you kidding me... who hasn\'t watched Breaking Bad! Smh...')
 }
@@ -45,6 +57,9 @@ console.log ('software developer', softwareDeveloper);
 
 if (softwareDeveloper === softwareDevAnswer) {
   alert ('CONGRATULATIONS YOU JUST WON $1,000,000 DOLLARS!!!! You truly know Yohanes better than anyone. Feel free to tap the "donations" box and share your winnings with him. He sure can use that porche Panemera. ')
+  score++;
+  console.log('score count', score);
+
 }
 
 for (var i=0; i<4; i++) {
@@ -54,6 +69,8 @@ for (var i=0; i<4; i++) {
   if (favoriteNumber === numberAnswer) {
   alert('Wow, lucky guess!')
     console.log('true', favoriteNumber);
+    score++;
+    console.log('score count', score);
     break;
   } else if (favoriteNumber < numberAnswer) {
     console.log('Close! but too low. ', favoriteNumber);
@@ -73,7 +90,10 @@ for (var i=0; i<6; i++) {
   if (favoriteCars.includes(automobile)){
     alert('Great guess. My dream car collection consists of a Lamboghini Armagedon, \'64 Chevy Chevelle, Porche Panemera, Tesla S, and a daily commutable rocket ship!(even if it hasn\'t been invented yet)')
     console.log('favorite cars', favoriteCars);
+    score++;
+    console.log('score count', score);
     break;
+
   } else alert('That\'s a good guess but not my top 5.')
   console.log('right or wrong', favoriteCars)
   while(i===5) {
@@ -82,3 +102,4 @@ for (var i=0; i<6; i++) {
     break;
   }
 }
+alert ('Congratulations '+name+'You have completed the essay! You answered'+score+' out of 7 questions coorect. Unfortunately you did not win the grand prize. Better luck next time on our trivia and have a great day!') ;
