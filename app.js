@@ -46,3 +46,23 @@ console.log ('software developer', softwareDeveloper);
 if (softwareDeveloper === softwareDevAnswer) {
   alert ('CONGRATULATIONS YOU JUST WON $1,000,000 DOLLARS!!!! You truly know Yohanes better than anyone. Feel free to tap the "donations" box and share your winnings with him. He sure can use that porche Panemera. ')
 }
+
+for (var i=0; i<4; i++) {
+  var favoriteNumber= prompt('What is my favorite number?')
+  var numberAnswer= '7'
+  console.log('favorite number', favoriteNumber);
+  if (favoriteNumber === numberAnswer) {
+  alert('Wow, lucky guess!')
+    console.log('true', favoriteNumber);
+    break;
+  } else if (favoriteNumber < numberAnswer) {
+    console.log('Close! but too low. ', favoriteNumber);
+    alert('Close! but too low. '); }
+      else if (favoriteNumber > numberAnswer) {
+        console.log('Sorry, too high.', favoriteNumber);
+        alert('Sorry, too high.');
+      } else {
+        console.log('Incorrect input', favoriteNumber);
+        alert('Incorrect input.')
+      }
+  }
