@@ -3,7 +3,7 @@
 var score=0;
 var name = prompt('Welcome to the Yohanes trivia. Please enter your user name.')
 
-
+function namFun(){
 var nameQuestion = prompt ('Is "Yohanes" a translated version of "Juan"?').toLowerCase();
 var nameAnswer = 'yes'
   console.log ('First Question', nameQuestion);
@@ -15,7 +15,10 @@ if (nameQuestion === nameAnswer) {
 } else {
   alert ('Of course you didn\'t know that one. Unless you\'ve completed the entire Rosetta Stone collection.')
 }
+}
+namFun();
 
+function homeTownFun () {
 var homeTownQuestion = prompt ('Has Yohanes lived in Seattle his whole life?').toLowerCase();
 var homeTown = 'yes'
   console.log('home town', homeTownQuestion);
@@ -28,7 +31,10 @@ if (homeTownQuestion === homeTown) {
 } else {
   alert ('You just ruined your chance at a million dollars smh... good bye.')
 }
+}
+homeTownFun();
 
+function carFun(){
 var carQuestion = prompt ('Does yohanes drive a Porche Panemera?').toLowerCase();
 var carAnswer = 'no'
 console.log('car question', carQuestion);
@@ -38,7 +44,10 @@ if (carQuestion === carAnswer) {
 } else {
     alert ('Although he imagines this to be true as well, his imaginary porche is actually a Honda Civic. Long story short, you got the wrong answer.')
 }
+}
+carFun();
 
+function tvShow(){
 var breakingBad = prompt ('Has Yohanes ever watched Breaking Bad?').toLowerCase();
 var breakingBadAnswer = 'yes'
 console.log ('Breaking Bad', breakingBad);
@@ -50,7 +59,10 @@ if (breakingBad === breakingBadAnswer) {
 } else {
   alert ('Are you kidding me... who hasn\'t watched Breaking Bad! Smh...')
 }
+}
+tvShow();
 
+function softwareFun(){
 var softwareDeveloper = prompt ('For you\'re final question, you must know Yohanes pretty well to answer coreectly and walk home with $1,000,000.... Will Yohanes.... be the greatest software developer this world has ever seen?').toLowerCase();
 var softwareDevAnswer = 'yes'
 console.log ('software developer', softwareDeveloper);
@@ -61,7 +73,10 @@ if (softwareDeveloper === softwareDevAnswer) {
   console.log('score count', score);
 
 }
+}
+softwareFun();
 
+function favNum(){
 for (var i=0; i<4; i++) {
   var favoriteNumber= prompt('What is my favorite number?')
   var numberAnswer= '7'
@@ -83,7 +98,10 @@ for (var i=0; i<4; i++) {
         alert('Incorrect input.')
       }
   }
+}
+favNum();
 
+function favCar(){
 var favoriteCars = ['panemera', 'tesla', 'chevelle', 'lamborghini','rocket ship'];
 for (var i=0; i<6; i++) {
   var automobile = prompt('Can you guess one of my 5 favoirte cars?').toLowerCase();
@@ -102,4 +120,7 @@ for (var i=0; i<6; i++) {
     break;
   }
 }
+}
+favCar();
+
 alert ('Congratulations '+name+'You have completed the essay! You answered'+score+' out of 7 questions coorect. Unfortunately you did not win the grand prize. Better luck next time on our trivia and have a great day!') ;
