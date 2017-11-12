@@ -1,0 +1,28 @@
+html { height: 100%;
+  background-size: cover;
+  background-image: url("http://imgs.abduzeedo.com/files/paul0v2/sunset/sun-08.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {color:red;
+  border: 1px solid white;
+}
+h3 {color: red;}
+h5 {
+  color: white;
+  border: 3px solid white;
+
+  p {
+    color: white;
+    border: 3px solid red;
+    border-style: bold;
+    border-color: red;
+    padding: 20;
+  }
+
+  footer {
+    color: white;
+    border: 3px solid red;
+
+  }
