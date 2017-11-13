@@ -1,10 +1,10 @@
 'use strict';
 
 var score=0;
-var name = prompt('Welcome to the Yohanes trivia ' + name + 'Please enter your user name.');
+var name = prompt('Welcome to the Yohanes trivia ' + name + ' Please enter your user name.');
 
 function namFun(){
-  var nameQuestion = prompt ('Is "Yohanes" a translated version of "Juan"?').toLowerCase();
+  var nameQuestion = prompt ('Welcome to the trivia ' + name + ', and good luck! Question #1: Is "Yohanes" a translated version of "Juan"?').toLowerCase();
   var nameAnswer = 'yes';
   console.log ('First Question', nameQuestion);
 
@@ -123,4 +123,4 @@ function favCar(){
 }
 favCar();
 
-alert ('Congratulations '+name+'You have completed the essay! You answered'+score+' out of 7 questions coorect. Unfortunately you did not win the grand prize. Better luck next time on our trivia and have a great day!') ;
+alert ('Congratulations '+name+ 'You have completed the essay! You answered' +score+ ' out of 7 questions coorect. Unfortunately you did not win the grand prize. Better luck next time on our trivia and have a great day!');
